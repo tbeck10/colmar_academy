@@ -14,17 +14,23 @@ a {
   text-decoration: none;
 }
 
+h1,
+h4 {
+  color: #4a4a4a;
+}
+
 .bold {
   font-weight: bold;
+  color: #4a4a4a;
 }
 
 .gray {
-  color: gray;
+  color: #9b9b9b;
 }
 
 .btn {
   color: white;
-  background-color: black;
+  background-color: #4a4a4a;
 }
 
 /* Header */
@@ -65,7 +71,7 @@ nav li {
 /* Banner */
 
 .banner {
-  background-color: lightgrey;
+  background-color: #d8d8d8;
   padding: 2rem 1.5rem;
   display: flex;
   align-items: center;
@@ -81,20 +87,21 @@ nav li {
 }
 
 .banner h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
   margin-bottom: 2rem;
 }
 
 .banner h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
 }
 
 .banner .btn {
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
-.banner span {
+.banner a {
   font-size: 1.5rem;
+  color: #ffffff;
 }
