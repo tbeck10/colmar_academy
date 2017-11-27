@@ -1,0 +1,50 @@
+/* Universal Styles */
+
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: white;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Header */
+
+header {
+  height: 4rem;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+header .logo {
+  height: 2rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+header .logo span {
+  text-transform: uppercase;
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 1rem;
+}
