@@ -15,6 +15,8 @@ a {
 }
 
 h1,
+h2,
+h3,
 h4 {
   color: #4a4a4a;
 }
@@ -110,14 +112,30 @@ nav li {
 
 .information {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
 }
 
 .highlight-info {
-  margin: 2rem 1.5rem;
+  padding: 0 1.5rem;
+  width: 60%;
 }
 
-.highlight-info img {
+.image-container img {
+  max-width: 100%;
   height: auto;
-  width: 60%;
+  display: block;
+}
+
+.information h2 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.hightlight-text {
+  padding: 2rem 0;
+}
+
+.highlight-text h2 {
+  padding-bottom: 2rem;
 }
