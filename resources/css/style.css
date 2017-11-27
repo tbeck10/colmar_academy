@@ -77,4 +77,24 @@ nav li {
 
 .banner-text {
   margin-left: 1.5rem;
+  width: 30%;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.banner h4 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.banner .btn {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.banner span {
+  font-size: 1.5rem;
 }
