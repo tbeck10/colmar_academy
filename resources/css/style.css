@@ -18,6 +18,15 @@ a {
   font-weight: bold;
 }
 
+.gray {
+  color: gray;
+}
+
+.btn {
+  color: white;
+  background-color: black;
+}
+
 /* Header */
 
 header {
@@ -28,10 +37,10 @@ header .content {
   display: flex;
   align-items: center;
   padding: 1.5rem;
+  height: 2rem;
 }
 
 header .logo {
-  height: 2rem;
   flex: 1;
   display: flex;
   align-items: center;
@@ -41,10 +50,31 @@ header .logo span {
   text-transform: uppercase;
 }
 
+header .logo img {
+  width: 2rem;
+}
+
 header nav ul {
   display: flex;
 }
 
 nav li {
   padding-left: 1rem;
+}
+
+/* Banner */
+
+.banner {
+  background-color: lightgrey;
+  padding: 2rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.banner img {
+  width: 60%;
+}
+
+.banner-text {
+  margin-left: 1.5rem;
 }
