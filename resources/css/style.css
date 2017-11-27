@@ -105,3 +105,19 @@ nav li {
   font-size: 1.5rem;
   color: #ffffff;
 }
+
+/* Information */
+
+.information {
+  display: flex;
+  align-items: center;
+}
+
+.highlight-info {
+  margin: 2rem 1.5rem;
+}
+
+.highlight-info img {
+  height: auto;
+  width: 60%;
+}
