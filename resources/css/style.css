@@ -6,14 +6,18 @@ body {
   font-size: 16px;
 }
 
+/*div {
+  border: 1px solid black;
+}*/
+
 a {
   color: black;
   text-decoration: none;
 }
 
 .container {
-  width: 960px;
-  margin: 0px auto;
+  width: 60rem;
+  margin: 0rem auto;
 }
 
 h1,
@@ -37,6 +41,10 @@ h3 {
 
 h4 {
   font-size: 1.5rem;
+}
+
+p {
+  font-size: 0.8rem;
 }
 
 .bold {
@@ -159,13 +167,14 @@ nav ul li {
   flex-direction: column;
   width: 40%;
   border-left: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
   padding-top: 1rem;
 }
 
 .info-box {
   display: flex;
   align-items: center;
-  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
 }
 
 .info-box .image-container {
@@ -177,6 +186,7 @@ nav ul li {
 
 .info-box .info-text {
   width: 65%;
+  padding-right: 1rem;
 }
 
 .info-text p {
@@ -189,4 +199,47 @@ nav ul li {
 
 .additional-information .selected {
   background-color: #d8d8d8;
+}
+
+/* Courses */
+
+.courses {
+  background-color: #d8d8d8;
+}
+
+.section-title {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.course-area {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.course-box {
+  width: 15.667rem;
+  height: auto;
+  margin: 2rem;
+  background-color: white;
+}
+
+.course-box .image-container {
+  height: auto;
+  overflow: hidden;
+}
+
+.course-text {
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.course-text h4 {
+
+}
+
+.course-text p {
+  padding: 0.5rem 0;
 }
