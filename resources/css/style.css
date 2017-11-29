@@ -15,11 +15,6 @@ a {
   text-decoration: none;
 }
 
-.container {
-  width: 60rem;
-  margin: 0rem auto;
-}
-
 h1,
 h2,
 h3,
@@ -40,7 +35,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.20rem;
 }
 
 p {
@@ -65,6 +60,13 @@ p {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+@media only screen and (min-width: 960px) {
+  .container {
+    width: 960px;
+    margin: 0px auto;
+  }
 }
 
 /* Header */
@@ -103,6 +105,7 @@ nav ul li {
 
 .banner {
   background-color: #d8d8d8;
+  padding-top: 4rem;
 }
 
 .banner-content {
@@ -119,7 +122,7 @@ nav ul li {
 
 .banner-text {
   margin-left: 1.5rem;
-  width: 30%;
+  width: 40%;
 }
 
 .banner h1 {
@@ -207,9 +210,12 @@ nav ul li {
   background-color: #d8d8d8;
 }
 
-.section-title {
+.course-container {
+  padding: 2rem 4.5rem;
+}
+
+.course-container h2 {
   text-align: center;
-  padding-top: 2rem;
 }
 
 .course-area {
@@ -220,9 +226,9 @@ nav ul li {
 }
 
 .course-box {
-  width: 15.667rem;
+  width: 14.54rem;
   height: auto;
-  margin: 2rem;
+  margin: 2rem 1rem;
   background-color: white;
 }
 
@@ -232,12 +238,11 @@ nav ul li {
 }
 
 .course-text {
-  text-align: center;
-  padding: 1.5rem 1rem;
+  padding: 1rem 1rem 1.5rem 1rem;
 }
 
 .course-text h4 {
-
+  padding: 1rem 0;
 }
 
 .course-text p {
