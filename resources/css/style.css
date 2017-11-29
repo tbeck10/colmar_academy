@@ -286,3 +286,20 @@ nav ul li {
   padding: 0.5rem 0;
   font-size: 1rem;
 }
+
+/* Footer */
+
+footer {
+  height: 4rem;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #d8d8d8;
+}
+
+footer .content {
+  display: flex;
+  align-items: center;
+}
+
+footer span {
+  flex-grow: 1;
+}
