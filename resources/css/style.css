@@ -85,6 +85,18 @@ p {
   }
 }
 
+@media only screen and (max-width: 673px) {
+  .desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 674px) {
+  .mobile {
+    display: none;
+  }
+}
+
 /* Header */
 
 header {
@@ -112,6 +124,15 @@ header .logo span {
 nav ul li {
   display: inline;
   padding-left: 1rem;
+}
+
+@media only screen and (max-width: 673px) {
+  header .logo {
+    justify-content: space-around;
+  }
+  header .logo img {
+    width: 2rem;
+  }
 }
 
 /* Banner */
@@ -155,6 +176,23 @@ nav ul li {
   color: #ffffff;
 }
 
+@media only screen and (max-width: 673px) {
+  .banner .image-container {
+    width: 100%;
+  }
+  .banner-content {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem;
+  }
+  .banner-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+}
+
 /* Information */
 
 .information {
@@ -173,7 +211,11 @@ nav ul li {
 
 .highlight-text p {
   padding: 1.5rem 0;
-  font-size: 1.25rem;
+  font-size: 1rem;
+}
+
+.highlight-text span {
+  font-size: 0.8rem;
 }
 
 .additional-information {
@@ -224,14 +266,14 @@ nav ul li {
 
 .course-area {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .course-box {
   width: 14.54rem;
   height: auto;
-  margin: 2rem 1rem;
+  margin: 1rem;
   background-color: white;
 }
 
