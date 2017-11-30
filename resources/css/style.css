@@ -332,6 +332,34 @@ nav ul li {
   padding: 0.5rem 0;
 }
 
+@media only screen and (max-width: 673px) {
+  .courses {
+    background-color: white;
+    border: 1px solid #d8d8d8;
+  }
+  .course-container {
+    padding: 3rem 0;
+  }
+  .course-container h2 {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+  }
+  .course-area {
+    flex-direction: column;
+    align-items: center
+  }
+  .course-box {
+    background-color: #d8d8d8;
+    padding: 2.5rem;
+    justify-content: center;
+    width: 75%;
+    margin: 0.5rem;
+  }
+  .course-box h3 {
+    font-size: 2.75rem;
+  }
+}
+
 /* Exhibit */
 
 .exhibit {
