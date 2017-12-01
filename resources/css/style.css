@@ -36,11 +36,15 @@ h3 {
 }
 
 h4 {
-  font-size: 1.20rem;
+  font-size: 1.25rem;
 }
 
 p {
-  font-size: 0.8rem;
+  font-size: 1rem;
+}
+
+span {
+  font-size: 1rem;
 }
 
 .flexbox {
@@ -108,7 +112,8 @@ header {
   border-bottom: 1px solid #d8d8d8;
 }
 
-header .content {
+header nav {
+  height: 2rem;
   padding: 1rem 1.5rem;
 }
 
@@ -121,6 +126,10 @@ header .logo span {
   font-size: 1rem;
 }
 
+header .logo img {
+  width: 2rem;
+}
+
 nav ul li {
   display: inline;
   padding-left: 1rem;
@@ -129,9 +138,6 @@ nav ul li {
 @media only screen and (max-width: 673px) {
   header .logo {
     justify-content: space-around;
-  }
-  header .logo img {
-    width: 2rem;
   }
 }
 
@@ -177,6 +183,9 @@ nav ul li {
 }
 
 @media only screen and (max-width: 673px) {
+  .banner-content {
+    padding: 0rem;
+  }
   .banner .image-container {
     width: 100%;
   }
@@ -190,8 +199,21 @@ nav ul li {
     padding: 2rem;
   }
   .banner-text h1 {
-    font-size: 3.25rem;
+    font-size: 4rem;
+    padding: 2rem;
   }
+  .banner-text h3 {
+    font-size: 2.5rem;
+    padding: 0.5rem 2rem;
+  }
+  .banner-text .btn {
+    margin: 1rem 2rem;
+  }
+.banner-text a {
+  font-size: 2.5rem;
+}
+
+  .
 }
 
 /* Information */
@@ -390,6 +412,19 @@ nav ul li {
   font-size: 1rem;
 }
 
+@media only screen and (max-width: 673px) {
+  .exhibit h2 {
+    font-size: 4rem;
+    padding: 2rem;
+  }
+  .featured-video {
+    width: 100%;
+  }
+  .exhibit .additional-information {
+    display: none;
+  }
+}
+
 /* Footer */
 
 footer {
@@ -405,4 +440,13 @@ footer .content {
 
 footer span {
   flex-grow: 1;
+}
+
+@media only screen and (max-width: 673px) {
+  footer {
+    padding-top: 2rem;
+  }
+  footer .content {
+    padding: 1rem;
+  }
 }
