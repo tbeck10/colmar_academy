@@ -24,7 +24,7 @@ h4 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
 }
 
 h2 {
@@ -159,46 +159,46 @@ nav ul li {
 
 .banner-content {
   margin: 1.5rem;
-  width: 40%;
+  width: 35%;
 }
 
-.banner h1 {
-  padding-bottom: 2rem;
-}
-
-.banner h3 {
-  padding-bottom: 2rem;
+.banner h4 {
+  padding: 2rem 0;
   font-weight: normal;
 }
 
-.banner .btn {
+.banner-content .btn {
   text-align: center;
   padding: 0.5rem 35%;
   font-size: 1.25rem;
 }
 
-.banner a {
-  font-size: 1rem;
-  color: #ffffff;
+@media only screen and (max-width: 876px) {
+  .banner-content .btn {
+    padding: 0.5rem 30%;
+  }
 }
 
 @media only screen and (max-width: 673px) {
-  .banner-co {
+  .banner .container {
+    flex-direction: column;
     padding: 0rem;
   }
   .banner .image-container {
     width: 100%;
   }
-  .banner-content {
-    flex-direction: column;
-  }
-  .banner-text {
+  .banner .banner-content {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding: 2rem;
+    justify-content: center;
+    width: 95%;
+    padding: 2rem 1rem;
+    margin: 0 10rem
   }
-  .banner-text h1 {
+  .banner .btn {
+    padding: 1rem 30%;
+  }
+  /*.banner-text h1 {
     font-size: 4rem;
     padding: 2rem;
   }
@@ -211,7 +211,7 @@ nav ul li {
   }
 .banner-text a {
   font-size: 2.5rem;
-}
+}*/
 }
 
 /* Information */
