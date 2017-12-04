@@ -198,57 +198,45 @@ nav ul li {
   .banner .btn {
     padding: 1rem 30%;
   }
-  /*.banner-text h1 {
-    font-size: 4rem;
-    padding: 2rem;
+  .banner-content h1 {
+    .font-size: 4rem;
   }
-  .banner-text h3 {
-    font-size: 2.5rem;
-    padding: 0.5rem 2rem;
+  .banner-content h4 {
+    font-size: 1.75rem;
   }
-  .banner-text .btn {
-    margin: 1rem 2rem;
-  }
-.banner-text a {
-  font-size: 2.5rem;
-}*/
 }
 
 /* Information */
-
-.information {
+.info {
   display: flex;
-  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 0rem 2rem 1.5rem;
 }
 
 .highlight-info {
   width: 60%;
-  padding: 2rem 1.5rem;
+  margin-right: 1.5rem;
 }
 
-.highlight-text {
-  padding: 2rem 0;
+.info-text h2 {
+  padding: 2rem 0 1.5rem 0;
 }
 
-.highlight-text p {
-  padding: 1.5rem 0;
-  font-size: 1rem;
+.info-text p {
+  padding-bottom: 1.5rem;
 }
 
 .highlight-text span {
   font-size: 0.8rem;
 }
 
-.additional-information {
+.box-column {
   display: flex;
   flex-direction: column;
+  margin-top: -1rem;
   width: 40%;
   border-left: 1px solid #d8d8d8;
   border-right: 1px solid #d8d8d8;
-}
-
-.info-section {
-  padding-top: 1rem;
 }
 
 .info-box {
@@ -262,12 +250,12 @@ nav ul li {
   padding: 1rem;
 }
 
-.info-box .info-text {
+.info-box .box-text {
   width: 65%;
   padding-right: 1rem;
 }
 
-.info-text p {
+.box-text p {
   padding: 0.5rem 0;
 }
 
@@ -276,38 +264,43 @@ nav ul li {
 }
 
 @media only screen and (max-width: 673px) {
-  .information .highlight-info {
+  .info {
+    padding: 0rem;
+  }
+  .info .highlight-info {
     display: none;
   }
-  .information .additional-information {
-    width: 100%
+  .box-column {
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    padding: 1rem 0;
   }
-  .additional-information .flexbox {
+  .box-column .flexbox {
     align-items: flex-start;
   }
-  .information .info-box {
-    flex-direction: column
-  }
   .info-box {
-    padding: 1rem;
+    flex-direction: column;
+    padding: 1rem 0rem;
     border: none;
     background-color: white;
+    width: 100%;
   }
-  .info-text {
+  .box-text {
     padding: 2rem;
   }
   .info-box .image-container {
     width: auto;
     height: auto;
   }
-  .info-text h4 {
-    font-size: 2.25rem;
+  .box-text h4 {
+    font-size: 2rem;
   }
-  .info-text p {
-    font-size: 1.5rem;
+  .box-text p {
+    font-size: 1rem;
     padding: 1rem 0rem;
   }
-  .info-text a {
+  .box-text a {
     font-size: 1.5rem;
   }
 }
