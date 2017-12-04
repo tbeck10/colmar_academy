@@ -307,11 +307,11 @@ nav ul li {
 
 /* Courses */
 
-.course-container {
+.courses .container {
   padding: 2rem 4.5rem;
 }
 
-.course-container h2 {
+.courses .container h2 {
   text-align: center;
 }
 
@@ -350,10 +350,10 @@ nav ul li {
     background-color: white;
     border: 1px solid #d8d8d8;
   }
-  .course-container {
+  .courses .container {
     padding: 3rem 0;
   }
-  .course-container h2 {
+  .courses .container h2 {
     font-size: 4rem;
     padding-bottom: 2rem;
   }
@@ -411,7 +411,7 @@ nav ul li {
   .featured-video {
     width: 100%;
   }
-  .exhibit .additional-information {
+  .exhibit .box-column {
     display: none;
   }
 }
