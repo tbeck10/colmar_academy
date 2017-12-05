@@ -7,10 +7,6 @@ body {
   background-color: #fffefa;
 }
 
-/*div {
-  border: 1px solid black;
-}*/
-
 a {
   color: #2e2b24;
   text-decoration: none;
@@ -47,7 +43,7 @@ h4 {
   color: #fffefa;
   background-color: #6f1514;
   border: 0.2rem solid #6f1514;
-  transition: all 10ms ease-in 0.2s;
+  transition: all 0.4s ease-out 0.2s;
 }
 
 .btn:hover {
@@ -120,7 +116,7 @@ nav ul li {
 }
 
 nav a {
-  transition: all 10ms ease-in-out 0.2s;
+  transition: all 0.4s ease-out 0.2s;
 }
 
 nav a:hover {
@@ -193,6 +189,7 @@ nav a:hover {
 }
 
 /* Information */
+
 .info {
   display: flex;
   align-items: flex-start;
@@ -312,7 +309,7 @@ nav a:hover {
   height: auto;
   margin: 1rem;
   background-color: #fffefa;
-  transition: all 10ms ease-in 0.2s;
+  transition: all 0.4s ease-out 0.2s;
 }
 
 .course-box:hover {
@@ -352,7 +349,7 @@ nav a:hover {
   }
   .course-area {
     flex-direction: column;
-    align-items: center
+    align-items: center;
   }
   .course-box {
     background-color: #7b7b6f;
@@ -426,7 +423,7 @@ footer span {
 
 footer i {
   padding: 0 1rem;
-  transition: all 10ms ease-in-out 0.2s;
+  transition: all 0.4s ease-out 0.2s;
 }
 
 footer i:hover {
