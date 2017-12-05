@@ -156,7 +156,6 @@ nav ul li {
 nav ul li:hover {
   color: #6f1514;
   font-weight: bold;
-  font-size: 1.25rem;
 }
 
 @media only screen and (max-width: 673px) {
@@ -375,7 +374,7 @@ nav ul li:hover {
 
 @media only screen and (max-width: 673px) {
   .courses {
-    background-color: white;
+    background-color: #fffefa;
     border: 1px solid #7b7b6f;
   }
   .courses .container {
@@ -463,6 +462,16 @@ footer .content {
 
 footer span {
   flex-grow: 1;
+}
+
+footer i {
+  padding: 0 1rem;
+  transition: all 10ms ease-in-out 0.2s;
+}
+
+footer i:hover {
+  color: #6f1514;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 673px) {
