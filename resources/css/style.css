@@ -24,30 +24,6 @@ h4 {
   font-weight: bold;
 }
 
-h1 {
-  font-size: 2.75rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1.25rem;
-}
-
-p {
-  font-size: 1rem;
-}
-
-span {
-  font-size: 1rem;
-}
-
 .flexbox {
   display: flex;
   align-items: center;
@@ -57,17 +33,14 @@ span {
   background-color: #b9b9ad;
 }
 
-.bold {
-  font-weight: bold;
-  color: #2e2b24;
-}
-
 .burgundy {
   color: #6f1514;
+  font-weight: bold;
 }
 
 .gray {
   color: #7b7b6f;
+  font-weight: bold;
 }
 
 .btn {
@@ -82,10 +55,6 @@ span {
   background-color: #fffefa;
 }
 
-.fade-in {
-  animation-name: fadeIn;
-}
-
 .image-container img {
   max-width: 100%;
   height: auto;
@@ -98,14 +67,6 @@ span {
   display: block;
 }
 
-@media only screen and (min-width: 960px) {
-  .container {
-    width: 60rem;
-    margin: 0rem auto;
-    /*padding: 2rem 1.5rem;*/
-  }
-}
-
 @media only screen and (max-width: 673px) {
   .desktop {
     display: none;
@@ -115,6 +76,13 @@ span {
 @media only screen and (min-width: 674px) {
   .mobile {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .container {
+    width: 120rem;
+    margin: 0rem auto;
   }
 }
 
@@ -140,7 +108,6 @@ header .logo {
 
 header .logo span {
   text-transform: uppercase;
-  font-size: 1rem;
 }
 
 header .logo img {
@@ -150,10 +117,13 @@ header .logo img {
 nav ul li {
   display: inline;
   padding-left: 1rem;
+}
+
+nav a {
   transition: all 10ms ease-in-out 0.2s;
 }
 
-nav ul li:hover {
+nav a:hover {
   color: #6f1514;
   font-weight: bold;
 }
@@ -181,25 +151,27 @@ nav ul li:hover {
 }
 
 .banner-content {
-  margin: 1.5rem;
+  margin-left: 1.5rem;
   width: 35%;
+  overflow: hidden;
 }
 
-.banner h4 {
+.banner h1 {
+  font-size: 2.7rem;
+}
+
+.banner p {
   padding: 2rem 0;
-  font-weight: normal;
+  font-size: 1.5rem;
 }
 
-.banner-content .btn {
+.banner .btn {
   text-align: center;
-  padding: 0.5rem 35%;
+  padding: 0.5rem;
   font-size: 1.25rem;
-}
-
-@media only screen and (max-width: 876px) {
-  .banner-content .btn {
-    padding: 0.5rem 30%;
-  }
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 @media only screen and (max-width: 673px) {
@@ -210,22 +182,13 @@ nav ul li:hover {
   .banner .image-container {
     width: 100%;
   }
-  .banner .banner-content {
+  .banner-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 95%;
+    width: auto;
     padding: 2rem 1rem;
-    margin: 0 10rem
-  }
-  .banner .btn {
-    padding: 1rem 30%;
-  }
-  .banner-content h1 {
-    .font-size: 4rem;
-  }
-  .banner-content h4 {
-    font-size: 1.75rem;
+    margin: 0rem;
   }
 }
 
@@ -233,7 +196,7 @@ nav ul li:hover {
 .info {
   display: flex;
   align-items: flex-start;
-  padding: 2rem 1.5rem;
+  padding: 2rem 0rem 2rem 1.5rem;
 }
 
 .highlight-info {
@@ -241,14 +204,15 @@ nav ul li:hover {
 }
 
 .info-text h2 {
-  padding: 2rem 0 1.5rem 0;
+  font-size: 2rem;
+  padding-top: 2rem;
 }
 
 .info-text p {
-  padding-bottom: 1.5rem;
+  padding: 1.5rem 0;
 }
 
-.highlight-text span {
+.info-text span {
   font-size: 0.8rem;
 }
 
@@ -277,7 +241,13 @@ nav ul li:hover {
   padding-right: 1rem;
 }
 
+.box-text h3 {
+  font-size: 1.25rem;
+}
+
 .box-text p {
+  font-size: 0.8rem;
+  line-height: 1.4;
   padding: 0.5rem 0;
 }
 
@@ -301,34 +271,22 @@ nav ul li:hover {
     width: 100%;
     border-left: none;
     border-right: none;
-    padding: 1rem 0;
+    margin: 0rem;
   }
   .box-column .flexbox {
     align-items: flex-start;
   }
   .info-box {
     flex-direction: column;
-    padding: 1rem 0rem;
     border: none;
     background-color: #fffefa;
     width: 100%;
   }
   .box-text {
-    padding: 2rem;
+    padding: 1rem 2rem;
   }
   .info-box .image-container {
     width: auto;
-    height: auto;
-  }
-  .box-text h4 {
-    font-size: 2rem;
-  }
-  .box-text p {
-    font-size: 1rem;
-    padding: 1rem 0rem;
-  }
-  .box-text a {
-    font-size: 1.5rem;
   }
 }
 
@@ -339,6 +297,7 @@ nav ul li:hover {
 }
 
 .courses .container h2 {
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -353,6 +312,11 @@ nav ul li:hover {
   height: auto;
   margin: 1rem;
   background-color: #fffefa;
+  transition: all 10ms ease-in 0.2s;
+}
+
+.course-box:hover {
+  background-color: #a19680;
 }
 
 .course-box .image-container {
@@ -361,14 +325,17 @@ nav ul li:hover {
 }
 
 .course-text {
-  padding: 1rem 1rem 1.5rem 1rem;
+  padding: 1rem;
 }
 
-.course-text h4 {
+.course-text h3 {
   padding: 1rem 0;
+  font-size: 1.25rem;
 }
 
 .course-text p {
+  font-size: 0.8rem;
+  line-height: 1.4;
   padding: 0.5rem 0;
 }
 
@@ -378,11 +345,10 @@ nav ul li:hover {
     border: 1px solid #7b7b6f;
   }
   .courses .container {
-    padding: 3rem 0;
+    padding: 2rem 0rem;
   }
   .courses .container h2 {
-    font-size: 4rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
   .course-area {
     flex-direction: column;
@@ -390,13 +356,8 @@ nav ul li:hover {
   }
   .course-box {
     background-color: #7b7b6f;
-    padding: 2.5rem;
-    justify-content: center;
-    width: 75%;
+    width: 90%;
     margin: 0.5rem;
-  }
-  .course-box h3 {
-    font-size: 2.75rem;
   }
 }
 
@@ -408,21 +369,25 @@ nav ul li:hover {
 
 .exhibit h2 {
   text-align: center;
+  padding-bottom: 2rem;
+  font-size: 2rem;
 }
 
 .exhibit-section {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 1.5rem;
 }
 
 .featured-video {
   width: 60%;
-  margin-right: 1.5rem;
 }
 
 .exhibit-text {
   padding: 1.5rem 0;
+}
+
+.exhibit-text h3 {
+  font-size: 1.5rem;
 }
 
 .exhibit-text p {
@@ -430,14 +395,9 @@ nav ul li:hover {
   font-size: 1rem;
 }
 
-.exhibit-info {
-  padding-top: -2rem;
-}
-
 @media only screen and (max-width: 673px) {
-  .exhibit h2 {
-    font-size: 4rem;
-    padding: 2rem;
+  .exhibit {
+    padding: 2rem 0rem;
   }
   .featured-video {
     width: 100%;
@@ -479,6 +439,11 @@ footer i:hover {
     padding-top: 2rem;
   }
   footer .content {
+    display: inline;
     padding: 1rem;
+  }
+  .icons {
+    padding: 2rem;
+    text-align: center;
   }
 }
