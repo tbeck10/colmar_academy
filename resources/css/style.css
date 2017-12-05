@@ -115,13 +115,10 @@ nav ul li {
   padding-left: 1rem;
 }
 
-nav a {
-  transition: all 0.4s ease-out 0.2s;
-}
-
 nav a:hover {
   color: #6f1514;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 673px) {
@@ -251,6 +248,10 @@ nav a:hover {
 .read-more {
   color: #274466;
   font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
 }
 
 .read-more:visited {
@@ -423,7 +424,6 @@ footer span {
 
 footer i {
   padding: 0 1rem;
-  transition: all 0.4s ease-out 0.2s;
 }
 
 footer i:hover {
